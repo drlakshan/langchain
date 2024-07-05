@@ -3,6 +3,8 @@
 
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
+# from langchain_anthropic import ChatAnthropic
+
 
 # Load environment variables from .env
 load_dotenv()
@@ -11,7 +13,7 @@ load_dotenv()
 model = ChatOpenAI(model="gpt-4o")
 
 # Invoke the model with a message
-result = model.invoke("What is 81 divided by 9?")
+result = model.invoke("what is the most interesting math problem?")
 print("Full result:")
 print(result)
 print("Content only:")
